@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="আকর্ষণীয় মোটিভেশনাল স্লাইড ক্যারোজাল - YouTube এবং সোশ্যাল মিডিয়ার জন্য">
+    <meta property="og:title" content="ইনটুইটিভ এমপ্যাথ - মোটিভেশন স্লাইড">
+    <meta property="og:description" content="আপনার জীবন পরিবর্তন করার যাত্রা শুরু করুন আজই">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'%3E%3Cstop offset='0%' style='stop-color:%236f00d2;stop-opacity:1' /%3E%3Cstop offset='100%' style='stop-color:%23ff006e;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad1)' width='1920' height='1080'/%3E%3C/svg%3E">
+    <title>মোটিভেশনাল স্লাইড ক্যারোজাল - এমপ্যাথ গাইড</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6f00d2;
+            --secondary-color: #ff006e;
+            --accent-color: #00d9ff;
+            --dark-bg: #0a0e27;
+            --light-bg: #1a1f3a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b8d4;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a0f2e 100%);
+        }
+
+        /* Main Container */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Slides */
+        .slides-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .slide.active {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* Slide Backgrounds */
+        .slide-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .slide-1 .slide-bg {
+            background: linear-gradient(135deg, #6f00d2 0%, #ff006e 100%);
+        }
+
+        .slide-2 .slide-bg {
+            background: linear-gradient(135deg, #ff006e 0%, #00d9ff 100%);
+        }
+
+        .slide-3 .slide-bg {
+            background: linear-gradient(135deg, #00d9ff 0%, #6f00d2 100%);
+        }
+
+        .slide-4 .slide-bg {
+            background: linear-gradient(135deg, #6f00d2 0%, #00d9ff 100%);
+        }
+
+        .slide-5 .slide-bg {
+            background: linear-gradient(135deg, #ff006e 0%, #6f00d2 100%);
+        }
+
+        .slide-6 .slide-bg {
+            background: linear-gradient(135deg, #00d9ff 0%, #ff006e 100%);
+        }
+
+        /* Animated Background Elements */
+        .animated-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            top: -10%;
+            right: -10%;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            width: 300px;
+            height: 300px;
+            bottom: -5%;
+            left: -5%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+
+        /* Content */
+        .slide-content {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+            color: white;
+        }
+
+        .slide-icon {
+            font-size: 80px;
+            margin-bottom: 30px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .slide-title {
+            font-size: 64px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .slide-subtitle {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-description {
+            font-size: 18px;
+            max-width: 800px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-cta {
+            display: inline-block;
+            padding: 16px 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .slide-cta:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        /* Controls */
+        .carousel-controls {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 100;
+        }
+
+        .control-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .control-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .control-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Slide Indicators */
+        .slide-indicators {
+            position: fixed;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .indicator.active {
+            background: white;
+            width: 30px;
+            border-radius: 6px;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            width: 0%;
+            z-index: 100;
+            transition: width 0.1s linear;
+        }
+
+        /* Timer Display */
+        .timer-display {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            font-size: 18px;
+            color: white;
+            background: rgba(111, 0, 210, 0.3);
+            padding: 15px 25px;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Slide Counter */
+        .slide-counter {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            font-size: 18px;
+            color: white;
+            background: rgba(111, 0, 210, 0.3);
+            padding: 15px 25px;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Social Buttons */
+        .social-buttons {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        /* Full Screen Toggle */
+        .fullscreen-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(111, 0, 210, 0.5);
+            border: 2px solid white;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fullscreen-btn:hover {
+            background: rgba(111, 0, 210, 0.8);
+            transform: scale(1.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slide-title {
+                font-size: 42px;
+            }
+
+            .slide-subtitle {
+                font-size: 20px;
+            }
+
+            .slide-description {
+                font-size: 14px;
+            }
+
+            .slide-icon {
+                font-size: 60px;
+            }
+
+            .social-buttons {
+                right: 15px;
+                gap: 10px;
+            }
+
+            .social-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .timer-display,
+            .slide-counter {
+                font-size: 14px;
+                padding: 10px 15px;
+                top: 15px;
+            }
+
+            .carousel-controls {
+                bottom: 20px;
+            }
+
+            .control-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+
+        /* Animation Entrance */
+        .slide-content.entrance {
+            animation: slideEntrance 0.8s ease-out;
+        }
+
+        @keyframes slideEntrance {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Auto-play indicator */
+        .autoplay-status {
+            position: fixed;
+            bottom: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 12px;
+            background: rgba(111, 0, 210, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .autoplay-status.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Carousel Container -->
+    <div class="carousel-container">
+        <!-- Counter -->
+        <div class="slide-counter" id="slideCounter">১/६</div>
+
+        <!-- Timer -->
+        <div class="timer-display" id="timerDisplay">০:००</div>
+
+        <!-- Social Media Buttons -->
+        <div class="social-buttons">
+            <button class="social-btn" onclick="shareToFacebook()" title="ফেসবুকে শেয়ার করুন">f</button>
+            <button class="social-btn" onclick="shareToTwitter()" title="টুইটারে শেয়ার করুন">𝕏</button>
+            <button class="social-btn" onclick="shareToWhatsApp()" title="হোয়াটসঅ্যাপে শেয়ার করুন">💬</button>
+            <button class="social-btn" onclick="copyLink()" title="লিংক কপি করুন">🔗</button>
+        </div>
+
+        <!-- Fullscreen Button -->
+        <button class="fullscreen-btn" onclick="toggleFullscreen()" title="পূর্ণ পর্দা">⛶</button>
+
+        <!-- Slides -->
+        <div class="slides-wrapper">
+            <!-- Slide 1 -->
+            <div class="slide slide-1 active">
+                <div class="slide-bg">
+                    <div class="animated-shape shape-1"></div>
+                    <div class="animated-shape shape-2"></div>
+                </div>
+                <div class="slide-content entrance">
+                    <div class="slide-icon">🌟</div>
+                    <h1 class="slide-title">আপনার সম্ভাবনা আনলক করুন</h1>
+                    <p class="slide-subtitle">ইনটুইটিভ এমপ্যাথ হয়ে ওঠার যাত্রা শুরু করুন</p>
+                    <p class="slide-description">প্রতিটি মানুষের মধ্যে লুকিয়ে আছে অসীম সম্ভাবনা। আমরা আপনাকে সাহায্য করব সেই সম্ভাবনা খুঁজে বের করতে এবং বিশ্বে নিজের স্থান তৈরি করতে।</p>
+                    <a class="slide-cta" href="#" onclick="nextSlide()">পরবর্তী →</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide slide-2">
+                <div class="slide-bg">
+                    <div class="animated-shape shape-1"></div>
+                    <div class="animated-shape shape-2"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-icon">💪</div>
+                    <h1 class="slide-title">শক্তিশালী হয়ে উঠুন মানসিকভাবে</h1>
+                    <p class="slide-subtitle">আপনার আবেগ নিয়ন্ত্রণ করুন, আপনার জীবন নিয়ন্ত্রণ করুন</p>
+                    <p class="slide-description">মানসিক শক্তি হল সাফল্যের চাবিকাঠি। আমরা শেখাই কিভাবে আপনার মনকে শক্তিশালী করতে হয় এবং চ্যালেঞ্জগুলো মোকাবেলা করতে হয়।</p>
+                    <a class="slide-cta" href="#" onclick="nextSlide()">পরবর্তী →</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide slide-3">
+                <div class="slide-bg">
+                    <div class="animated-shape shape-1"></div>
+                    <div class="animated-shape shape-2"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-icon">❤️</div>
+                    <h1 class="slide-title">এমপ্যাথি - অন্যদের বুঝার শিল্প</h1>
+                    <p class="slide-subtitle">মানুষের হৃদয় স্পর্শ করুন আপনার সহানুভূতি দিয়ে</p>
+                    <p class="slide-description">এমপ্যাথি শুধু একটি অনুভূতি নয়, এটি একটি শক্তি। এটি আপনাকে মানুষের সাথে গভীর সম্পর্ক তৈরি করতে সাহায্য করে এবং তাদের জীবনে ইতিবাচক প্রভাব ফেলে।</p>
+                    <a class="slide-cta" href="#" onclick="nextSlide()">পরবর্তী →</a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide slide-4">
+                <div class="slide-bg">
+                    <div class="animated-shape shape-1"></div>
+                    <div class="animated-shape shape-2"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-icon">🚀</div>
+                    <h1 class="slide-title">আপনার স্বপ্ন বাস্তবায়ন করুন</h1>
+                    <p class="slide-subtitle">লক্ষ্য নির্ধারণ এবং সেগুলি অর্জনের কৌশল শিখুন</p>
+                    <p class="slide-description">প্রতিটি সফল ব্যক্তির পিছনে একটি স্বচ্ছ লক্ষ্য এবং একটি শক্তিশালী পরিকল্পনা রয়েছে। আমরা আপনাকে শেখাব কিভাবে আপনার স্বপ্নকে বাস্তবে রূপান্তরিত করতে হয়।</p>
+                    <a class="slide-cta" href="#" onclick="nextSlide()">পরবর্তী →</a>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide slide-5">
+                <div class="slide-bg">
+                    <div class="animated-shape shape-1"></div>
+                    <div class="animated-shape shape-2"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-icon">🌍</div>
+                    <h1 class="slide-title">বিশ্বে ইতিবাচক পরিবর্তন আনুন</h1>
+                    <p class="slide-subtitle">নিজের বৃদ্ধি এবং অন্যদের সেবা করুন একসাথে</p>
+                    <p class="slide-description">সবচেয়ে সন্তোষজনক জীবন হল যেখানে আপনি নিজের স্বপ্ন পূরণ করার সাথে সাথে অন্যদের জীবনেও ইতিবাচক প্রভাব ফেলেন। এটি সত্যিকারের সাফল্য।</p>
+                    <a class="slide-cta" href="#" onclick="nextSlide()">পরবর্তী →</a>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide slide-6">
+                <div class="slide-bg">
+                    <div class="animated-shape shape-1"></div>
+                    <div class="animated-shape shape-2"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-icon">📺</div>
+                    <h1 class="slide-title">আমাদের চ্যানেল সাবস্ক্রাইব করুন</h1>
+                    <p class="slide-subtitle">প্রতি সপ্তাহে নতুন অনুপ্রেরণা এবং গাইডেন্স পান</p>
+                    <p class="slide-description">আমাদের YouTube চ্যানেল সাবস্ক্রাইব করুন এবং আপনার ব্যক্তিগত উন্নয়নের যাত্রা শুরু করুন আজই। হাজার হাজার মানুষ ইতিমধ্যে তাদের জীবন পরিবর্তন করেছে আমাদের সাথে।</p>
+                    <a class="slide-cta" href="#" onclick="subscribeChannel()">এখনই সাবস্ক্রাইব করুন 🔔</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="carousel-controls">
+            <button class="control-btn" onclick="previousSlide()" title="পূর্ববর্তী">←</button>
+            <button class="control-btn" id="playPauseBtn" onclick="toggleAutoplay()" title="চালু/থামান">⏯</button>
+            <button class="control-btn" onclick="nextSlide()" title="পরবর্তী">→</button>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slide-indicators" id="slideIndicators"></div>
+
+        <!-- Autoplay Status -->
+        <div class="autoplay-status" id="autoplayStatus">স্বয়ংক্রিয় চলছে...</div>
+    </div>
+
+    <script>
+        // Configuration
+        const CONFIG = {
+            totalSlides: 6,
+            autoplayInterval: 6000, // 6 seconds
+            transitionDuration: 800, // 800ms
+            startAutoplay: true
+        };
+
+        // State
+        let state = {
+            currentSlide: 0,
+            isAutoplay: CONFIG.startAutoplay,
+            autoplayTimer: null,
+            countdownTimer: null,
+            timeRemaining: CONFIG.autoplayInterval / 1000
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            createIndicators();
+            showSlide(0);
+            if (state.isAutoplay) {
+                startAutoplay();
+            }
+            updatePlayPauseButton();
+        });
+
+        // Create Indicators
+        function createIndicators() {
+            const container = document.getElementById('slideIndicators');
+            for (let i = 0; i < CONFIG.totalSlides; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'indicator' + (i === 0 ? ' active' : '');
+                indicator.onclick = () => goToSlide(i);
+                container.appendChild(indicator);
+            }
+        }
+
+        // Show Slide
+        function showSlide(index) {
+            // Remove active class from all slides
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+
+            // Remove active class from all indicators
+            document.querySelectorAll('.indicator').forEach(indicator => {
+                indicator.classList.remove('active');
+            });
+
+            // Add active class to current slide and indicator
+            document.querySelectorAll('.slide')[index].classList.add('active');
+            document.querySelectorAll('.indicator')[index].classList.add('active');
+
+            // Update counter
+            document.getElementById('slideCounter').textContent = (index + 1) + '/' + CONFIG.totalSlides;
+
+            // Update progress bar
+            const progress = ((index + 1) / CONFIG.totalSlides) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+
+            // Reset timer
+            state.timeRemaining = CONFIG.autoplayInterval / 1000;
+            updateTimer();
+
+            state.currentSlide = index;
+        }
+
+        // Next Slide
+        function nextSlide() {
+            resetAutoplayTimer();
+            const nextIndex = (state.currentSlide + 1) % CONFIG.totalSlides;
+            showSlide(nextIndex);
+        }
+
+        // Previous Slide
+        function previousSlide() {
+            resetAutoplayTimer();
+            const prevIndex = (state.currentSlide - 1 + CONFIG.totalSlides) % CONFIG.totalSlides;
+            showSlide(prevIndex);
+        }
+
+        // Go to Specific Slide
+        function goToSlide(index) {
+            resetAutoplayTimer();
+            showSlide(index);
+        }
+
+        // Autoplay
+        function startAutoplay() {
+            state.isAutoplay = true;
+            updatePlayPauseButton();
+            showAutoplayStatus('স্বয়ংক্রিয় চলছে...');
+
+            state.autoplayTimer = setInterval(() => {
+                nextSlide();
+            }, CONFIG.autoplayInterval);
+
+            startCountdownTimer();
+        }
+
+        function stopAutoplay() {
+            state.isAutoplay = false;
+            updatePlayPauseButton();
+            showAutoplayStatus('থামানো হয়েছে');
+
+            if (state.autoplayTimer) {
+                clearInterval(state.autoplayTimer);
+            }
+            if (state.countdownTimer) {
+                clearInterval(state.countdownTimer);
+            }
+        }
+
+        function toggleAutoplay() {
+            if (state.isAutoplay) {
+                stopAutoplay();
+            } else {
+                startAutoplay();
+            }
+        }
+
+        function resetAutoplayTimer() {
+            if (state.isAutoplay) {
+                stopAutoplay();
+                startAutoplay();
+            }
+        }
+
+        // Countdown Timer
+        function startCountdownTimer() {
+            if (state.countdownTimer) {
+                clearInterval(state.countdownTimer);
+            }
+
+            state.countdownTimer = setInterval(() => {
+                state.timeRemaining--;
+                updateTimer();
+
+                if (state.timeRemaining <= 0) {
+                    state.timeRemaining = CONFIG.autoplayInterval / 1000;
+                }
+            }, 1000);
+        }
+
+        function updateTimer() {
+            const minutes = Math.floor(state.timeRemaining / 60);
+            const seconds = Math.floor(state.timeRemaining % 60);
+            const timeString = minutes.toString().padStart(1, '0') + ':' + seconds.toString().padStart(2, '0');
+            document.getElementById('timerDisplay').textContent = timeString;
+        }
+
+        // Update Play/Pause Button
+        function updatePlayPauseButton() {
+            const btn = document.getElementById('playPauseBtn');
+            btn.textContent = state.isAutoplay ? '⏸' : '⏯';
+            btn.title = state.isAutoplay ? 'থামান' : 'চালু করুন';
+        }
+
+        // Autoplay Status
+        function showAutoplayStatus(message) {
+            const status = document.getElementById('autoplayStatus');
+            status.textContent = message;
+            status.classList.add('show');
+
+            setTimeout(() => {
+                status.classList.remove('show');
+            }, 2000);
+        }
+
+        // Fullscreen
+        function toggleFullscreen() {
+            const elem = document.documentElement;
+            if (
+                !document.fullscreenElement &&
+                !document.mozFullScreenElement &&
+                !document.webkitFullscreenElement &&
+                !document.msFullscreenElement
+            ) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) {
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            } else {
+                if (document.cancelFullScreen) {
+                    document.cancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
+        }
+
+        // Social Sharing
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('আপনার জীবন পরিবর্তন করুন ইনটুইটিভ এমপ্যাথির মাধ্যমে! 🌟');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareToWhatsApp() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('আপনার জীবন পরিবর্তন করুন ইনটুইটিভ এমপ্যাথির মাধ্যমে! 🌟\n\n');
+            window.open(`https://wa.me/?text=${text}${url}`, '_blank');
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                const status = document.getElementById('autoplayStatus');
+                status.textContent = 'লিংক কপি হয়েছে! ✓';
+                status.classList.add('show');
+                setTimeout(() => {
+                    status.classList.remove('show');
+                }, 2000);
+            });
+        }
+
+        function subscribeChannel() {
+            alert('🔔 ধন্যবাদ আগ্রহ দেখানোর জন্য!\n\nআমাদের YouTube চ্যানেল সাবস্ক্রাইব করুন আপনার আরো অনুপ্রেরণার জন্য।');
+        }
+
+        // Keyboard Controls
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight') {
+                nextSlide();
+            } else if (event.key === 'ArrowLeft') {
+                previousSlide();
+            } else if (event.key === ' ') {
+                event.preventDefault();
+                toggleAutoplay();
+            } else if (event.key === 'f') {
+                toggleFullscreen();
+            }
+        });
+
+        // Mouse Controls
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchStartX - touchEndX > 50) {
+                nextSlide();
+            } else if (touchEndX - touchStartX > 50) {
+                previousSlide();
+            }
+        }
+
+        // Click anywhere to pause autoplay hint
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.control-btn, .indicator, .social-btn, .fullscreen-btn, .slide-cta')) {
+                // Only show hint on first click
+                if (state.isAutoplay && !document.body.hasAttribute('data-hint-shown')) {
+                    document.body.setAttribute('data-hint-shown', 'true');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
