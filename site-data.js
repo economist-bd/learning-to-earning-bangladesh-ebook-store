@@ -19,8 +19,8 @@ window.SITE_DATA = {
     nameBn: "লার্নিং টু আর্নিং",
     tagline: "শেখা থেকে আয়ের যাত্রা",
     shortDesc: "যেখানে শব্দ এবং ছবি শিল্প তৈরি করে।",
-    supportWhatsApp: "8801XXXXXXXXX",   // TODO: আসল WhatsApp নাম্বার বসান
-    email: "hello@example.com"          // TODO: আসল ইমেইল বসান
+    supportWhatsApp: "8801715247588",   // TODO: আসল WhatsApp নাম্বার বসান
+    email: "eco452@gmail.com"          // TODO: আসল ইমেইল বসান
   },
 
   hero: {
@@ -141,7 +141,7 @@ window.SITE_DATA = {
       order: 12,
       icon: "👨‍💼",
       title: "আমার পরিচয়",
-      desc: "Nasir Bhai — ডিজিটাল শিক্ষক ও কনটেন্ট ক্রিয়েটরের অভিজ্ঞতা থেকে শেখা।",
+      desc: "Monjurul Haque — ডিজিটাল শিক্ষক ও কনটেন্ট ক্রিয়েটরের অভিজ্ঞতা থেকে শেখা।",
       tag: "লেখক"
     }
   ],
@@ -181,7 +181,7 @@ window.SITE_DATA = {
         desc: "ভিডিওর শুরুতে ব্যবহারের জন্য ব্র্যান্ডেড ইন্ট্রো ক্লিপ।",
         category: "ইন্ট্রো/আউট্রো",
         src: "media/videos/intro.mp4",
-        poster: "media/thumbs/intro.jpg",
+        poster: "media/thumbs/2.jpg",
         duration: "0:10"
       },
       {
@@ -190,7 +190,7 @@ window.SITE_DATA = {
         desc: "ভিডিওর শেষে সাবস্ক্রাইব কল-টু-অ্যাকশনসহ আউট্রো ক্লিপ।",
         category: "ইন্ট্রো/আউট্রো",
         src: "media/videos/outro.mp4",
-        poster: "media/thumbs/outro.jpg",
+        poster: "media/thumbs/1.jpg",
         duration: "0:10"
       },
       {
@@ -199,7 +199,7 @@ window.SITE_DATA = {
         desc: "সম্পূর্ণ গাইডবুক প্রজেক্টের একটি সংক্ষিপ্ত ভিজ্যুয়াল পরিচিতি।",
         category: "প্রিভিউ",
         src: "media/videos/description.mp4",
-        poster: "media/thumbs/description.jpg",
+        poster: "media/thumbs/3.jpg",
         duration: "0:40"
       },
       {
@@ -207,8 +207,8 @@ window.SITE_DATA = {
         title: "পডকাস্ট প্রিভিউ",
         desc: "পডকাস্ট ফরম্যাটে মোটিভেশনাল কথোপকথনের একটি ঝলক।",
         category: "পডকাস্ট",
-        src: "media/videos/podcast-1.mp4",
-        poster: "media/thumbs/podcast-1.jpg",
+        src: "media/videos/podcast.mp4",
+        poster: "media/thumbs/4.jpg",
         duration: "0:10"
       },
       {
@@ -216,8 +216,8 @@ window.SITE_DATA = {
         title: "পডকাস্ট এপিসোড",
         desc: "পূর্ণ দৈর্ঘ্যের পডকাস্ট এপিসোড রেকর্ডিং।",
         category: "পডকাস্ট",
-        src: "media/videos/podcast-2.mp4",
-        poster: "media/thumbs/podcast-2.jpg",
+        src: "media/videos/podcust.mp4",
+        poster: "media/thumbs/5.jpg",
         duration: "0:44"
       },
       {
@@ -226,7 +226,7 @@ window.SITE_DATA = {
         desc: "HeyGen দিয়ে তৈরি AI অ্যাভাটার প্রেজেন্টেশনের নমুনা।",
         category: "AI অ্যাভাটার",
         src: "media/videos/heygen-avatar.webm",
-        poster: "media/thumbs/heygen-avatar.jpg",
+        poster: "media/thumbs/6.jpg",
         duration: "0:12"
       },
       {
@@ -234,7 +234,7 @@ window.SITE_DATA = {
         title: "AI অ্যাভাটার প্রেজেন্টার শট",
         desc: "প্রেজেন্টার স্টাইলে AI অ্যাভাটারের একটি শট।",
         category: "AI অ্যাভাটার",
-        src: "media/videos/avatar-presenter.webm",
+        src: "media/videos/avatar_shot_presenter.webm",
         poster: "media/thumbs/avatar-presenter.jpg",
         duration: "0:11"
       },
@@ -243,7 +243,7 @@ window.SITE_DATA = {
         title: "AI অ্যাভাটার হোম ডেমো",
         desc: "হোম সেটআপে AI অ্যাভাটার ভিডিওর সম্পূর্ণ ডেমো।",
         category: "AI অ্যাভাটার",
-        src: "media/videos/avatar-home-demo.webm",
+        src: "media/videos/avatar_v-avatar_home.webm",
         poster: "media/thumbs/avatar-home-demo.jpg",
         duration: "0:24"
       },
@@ -261,7 +261,7 @@ window.SITE_DATA = {
         title: "রেন্ডার করা ফাইনাল ভিডিও",
         desc: "সম্পূর্ণ এডিট শেষে রেন্ডার করা একটি ফাইনাল আউটপুট নমুনা।",
         category: "প্রিভিউ",
-        src: "media/videos/rendered-demo.webm",
+        src: "media/videos/rendered_1782310300558.webm",
         poster: "media/thumbs/rendered-demo.jpg",
         duration: "0:09"
       }
@@ -298,7 +298,7 @@ window.SITE_DATA = {
   },
 
   author: {
-    name: "Nasir Bhai",
+    name: "Monjurul Haque",
     role: "ডিজিটাল শিক্ষক ও কনটেন্ট ক্রিয়েটর",
     bio: "বাংলাভাষী দর্শকদের জন্য সহজ বাংলায় YouTube, AI টুলস ও অনলাইন আয়ের বাস্তব রোডম্যাপ তৈরি করেন।"
   },
