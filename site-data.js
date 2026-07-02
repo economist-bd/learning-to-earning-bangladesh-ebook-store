@@ -172,6 +172,131 @@ window.SITE_DATA = {
     }
   ],
 
+  /* রিপোর ভিডিও/অডিও/PDF ফাইল — মিডিয়া লাইব্রেরি সেকশনে দেখানো হয় */
+  media: {
+    videos: [
+      {
+        id: "intro",
+        title: "চ্যানেল ইন্ট্রো",
+        desc: "ভিডিওর শুরুতে ব্যবহারের জন্য ব্র্যান্ডেড ইন্ট্রো ক্লিপ।",
+        category: "ইন্ট্রো/আউট্রো",
+        src: "media/videos/intro.mp4",
+        poster: "media/thumbs/intro.jpg",
+        duration: "0:10"
+      },
+      {
+        id: "outro",
+        title: "চ্যানেল আউট্রো",
+        desc: "ভিডিওর শেষে সাবস্ক্রাইব কল-টু-অ্যাকশনসহ আউট্রো ক্লিপ।",
+        category: "ইন্ট্রো/আউট্রো",
+        src: "media/videos/outro.mp4",
+        poster: "media/thumbs/outro.jpg",
+        duration: "0:10"
+      },
+      {
+        id: "description",
+        title: "প্রজেক্ট বিবরণ ভিডিও",
+        desc: "সম্পূর্ণ গাইডবুক প্রজেক্টের একটি সংক্ষিপ্ত ভিজ্যুয়াল পরিচিতি।",
+        category: "প্রিভিউ",
+        src: "media/videos/description.mp4",
+        poster: "media/thumbs/description.jpg",
+        duration: "0:40"
+      },
+      {
+        id: "podcast-1",
+        title: "পডকাস্ট প্রিভিউ",
+        desc: "পডকাস্ট ফরম্যাটে মোটিভেশনাল কথোপকথনের একটি ঝলক।",
+        category: "পডকাস্ট",
+        src: "media/videos/podcast-1.mp4",
+        poster: "media/thumbs/podcast-1.jpg",
+        duration: "0:10"
+      },
+      {
+        id: "podcast-2",
+        title: "পডকাস্ট এপিসোড",
+        desc: "পূর্ণ দৈর্ঘ্যের পডকাস্ট এপিসোড রেকর্ডিং।",
+        category: "পডকাস্ট",
+        src: "media/videos/podcast-2.mp4",
+        poster: "media/thumbs/podcast-2.jpg",
+        duration: "0:44"
+      },
+      {
+        id: "heygen-avatar",
+        title: "HeyGen AI অ্যাভাটার ডেমো",
+        desc: "HeyGen দিয়ে তৈরি AI অ্যাভাটার প্রেজেন্টেশনের নমুনা।",
+        category: "AI অ্যাভাটার",
+        src: "media/videos/heygen-avatar.webm",
+        poster: "media/thumbs/heygen-avatar.jpg",
+        duration: "0:12"
+      },
+      {
+        id: "avatar-presenter",
+        title: "AI অ্যাভাটার প্রেজেন্টার শট",
+        desc: "প্রেজেন্টার স্টাইলে AI অ্যাভাটারের একটি শট।",
+        category: "AI অ্যাভাটার",
+        src: "media/videos/avatar-presenter.webm",
+        poster: "media/thumbs/avatar-presenter.jpg",
+        duration: "0:11"
+      },
+      {
+        id: "avatar-home-demo",
+        title: "AI অ্যাভাটার হোম ডেমো",
+        desc: "হোম সেটআপে AI অ্যাভাটার ভিডিওর সম্পূর্ণ ডেমো।",
+        category: "AI অ্যাভাটার",
+        src: "media/videos/avatar-home-demo.webm",
+        poster: "media/thumbs/avatar-home-demo.jpg",
+        duration: "0:24"
+      },
+      {
+        id: "speech-cleanup",
+        title: "স্পিচ ক্লিনআপ ডেমো",
+        desc: "AI দিয়ে ভয়েস/স্পিচ পরিষ্কার করার আগে-পরের নমুনা।",
+        category: "AI টুলস",
+        src: "media/videos/speech-cleanup.webm",
+        poster: "media/thumbs/speech-cleanup.jpg",
+        duration: "0:10"
+      },
+      {
+        id: "rendered-demo",
+        title: "রেন্ডার করা ফাইনাল ভিডিও",
+        desc: "সম্পূর্ণ এডিট শেষে রেন্ডার করা একটি ফাইনাল আউটপুট নমুনা।",
+        category: "প্রিভিউ",
+        src: "media/videos/rendered-demo.webm",
+        poster: "media/thumbs/rendered-demo.jpg",
+        duration: "0:09"
+      }
+    ],
+    audio: [
+      {
+        id: "audio-1",
+        title: "মোটিভেশনাল ভয়েসওভার",
+        desc: "AI ভয়েসওভার টুল দিয়ে তৈরি একটি নমুনা ন্যারেশন — গাইডবুকের \"ভয়েস ওভার\" অধ্যায়ের সাথে সম্পর্কিত।",
+        src: "media/audio/audio.mp3",
+        duration: "0:44"
+      }
+    ],
+    pdfs: [
+      {
+        id: "planning",
+        title: "প্ল্যানিং গাইড",
+        desc: "চ্যানেল ও কনটেন্ট পরিকল্পনার সম্পূর্ণ রোডম্যাপ (PDF)।",
+        src: "media/pdfs/planning.pdf",
+        thumb: "media/thumbs/planning.jpg",
+        pages: 48,
+        size: "2.7 MB"
+      },
+      {
+        id: "preparetion",
+        title: "প্রিপারেশন গাইড",
+        desc: "চ্যানেল শুরুর আগে প্রস্তুতির ধাপে ধাপে চেকলিস্ট (PDF)।",
+        src: "media/pdfs/preparetion.pdf",
+        thumb: "media/thumbs/preparetion.jpg",
+        pages: 38,
+        size: "2.5 MB"
+      }
+    ]
+  },
+
   author: {
     name: "Nasir Bhai",
     role: "ডিজিটাল শিক্ষক ও কনটেন্ট ক্রিয়েটর",
