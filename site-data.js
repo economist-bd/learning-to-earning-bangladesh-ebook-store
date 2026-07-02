@@ -207,7 +207,7 @@ window.SITE_DATA = {
         title: "পডকাস্ট প্রিভিউ",
         desc: "পডকাস্ট ফরম্যাটে মোটিভেশনাল কথোপকথনের একটি ঝলক।",
         category: "পডকাস্ট",
-        src: "media/videos/podcast.mp4",
+        src: "media/videos/10.mp4",
         poster: "media/thumbs/4.jpg",
         duration: "0:10"
       },
@@ -216,7 +216,7 @@ window.SITE_DATA = {
         title: "পডকাস্ট এপিসোড",
         desc: "পূর্ণ দৈর্ঘ্যের পডকাস্ট এপিসোড রেকর্ডিং।",
         category: "পডকাস্ট",
-        src: "media/videos/podcust.mp4",
+        src: "media/videos/9.mp4",
         poster: "media/thumbs/5.jpg",
         duration: "0:44"
       },
@@ -225,7 +225,7 @@ window.SITE_DATA = {
         title: "HeyGen AI অ্যাভাটার ডেমো",
         desc: "HeyGen দিয়ে তৈরি AI অ্যাভাটার প্রেজেন্টেশনের নমুনা।",
         category: "AI অ্যাভাটার",
-        src: "media/videos/heygen-avatar.webm",
+        src: "media/videos/8.webm",
         poster: "media/thumbs/6.jpg",
         duration: "0:12"
       },
@@ -234,7 +234,7 @@ window.SITE_DATA = {
         title: "AI অ্যাভাটার প্রেজেন্টার শট",
         desc: "প্রেজেন্টার স্টাইলে AI অ্যাভাটারের একটি শট।",
         category: "AI অ্যাভাটার",
-        src: "media/videos/avatar_shot_presenter.webm",
+        src: "media/videos/7.webm",
         poster: "media/thumbs/avatar-presenter.jpg",
         duration: "0:11"
       },
@@ -243,7 +243,7 @@ window.SITE_DATA = {
         title: "AI অ্যাভাটার হোম ডেমো",
         desc: "হোম সেটআপে AI অ্যাভাটার ভিডিওর সম্পূর্ণ ডেমো।",
         category: "AI অ্যাভাটার",
-        src: "media/videos/avatar_v-avatar_home.webm",
+        src: "media/videos/9.webm",
         poster: "media/thumbs/avatar-home-demo.jpg",
         duration: "0:24"
       },
@@ -261,7 +261,7 @@ window.SITE_DATA = {
         title: "রেন্ডার করা ফাইনাল ভিডিও",
         desc: "সম্পূর্ণ এডিট শেষে রেন্ডার করা একটি ফাইনাল আউটপুট নমুনা।",
         category: "প্রিভিউ",
-        src: "media/videos/rendered_1782310300558.webm",
+        src: "media/videos/7.webm",
         poster: "media/thumbs/rendered-demo.jpg",
         duration: "0:09"
       }
